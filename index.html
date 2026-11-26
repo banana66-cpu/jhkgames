@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>게임 놀이터 – 브라우저에서 바로 하는 게임 모음</title>
+  <meta name="description" content="설치 없이 브라우저에서 바로 즐기는 미니 게임 모음.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#top">게임 놀이터</a>
+    <nav aria-label="주요 메뉴">
+      <a href="#games">게임 목록</a>
+      <a href="#about">소개</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- 소개 영역 -->
+    <section class="hero">
+      <h1>설치 없이,<br>눌러서 바로 플레이.</h1>
+      <p class="hero-sub">직접 만든 미니 게임을 한곳에 모았어요. 마음에 드는 카드를 골라 시작하세요.</p>
+      <a class="btn" href="#games">게임 고르기</a>
+    </section>
+
+    <!-- 게임 목록 -->
+    <section class="games" id="games">
+      <h2>게임 목록</h2>
+
+      <!-- 카테고리 필터 (자바스크립트 없이 동작) -->
+      <div class="filters" role="radiogroup" aria-label="카테고리">
+        <input type="radio" name="cat" id="f-all" checked>
+        <label for="f-all">전체</label>
+
+        <input type="radio" name="cat" id="f-action">
+        <label for="f-action">액션</label>
+
+        <input type="radio" name="cat" id="f-puzzle">
+        <label for="f-puzzle">퍼즐</label>
+
+        <input type="radio" name="cat" id="f-board">
+        <label for="f-board">보드</label>
+
+        <input type="radio" name="cat" id="f-skill">
+        <label for="f-skill">연습</label>
+      </div>
+
+      <ul class="grid">
+
+        <!--
+          게임 카드 하나를 추가하려면 <li class="card ...">…</li> 블록을 복사하세요.
+          - 색상 클래스: c-blue / c-pink / c-yellow / c-mint / c-orange
+          - data-cat: action / puzzle / board / skill (공백으로 여러 개 가능)
+          - href: 게임 HTML 파일 경로 (예: games/snake/index.html) 또는 외부 주소
+        -->
+
+        <li class="card c-mint" data-cat="action">
+          <a href="games/snake/index.html" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">🐍</div>
+            <div class="info">
+              <h3>뱀 게임</h3>
+              <p>먹이를 먹고 길어지세요. 벽과 몸에 닿으면 끝!</p>
+              <span class="tag">액션</span>
+            </div>
+            <span class="play">플레이</span>
+          </a>
+        </li>
+
+        <li class="card c-pink" data-cat="action">
+          <a href="games/breakout/index.html" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">🧱</div>
+            <div class="info">
+              <h3>벽돌깨기</h3>
+              <p>공을 튕겨 모든 벽돌을 부수세요.</p>
+              <span class="tag">액션</span>
+            </div>
+            <span class="play">플레이</span>
+          </a>
+        </li>
+
+        <li class="card c-yellow" data-cat="puzzle">
+          <a href="games/2048/index.html" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">🔢</div>
+            <div class="info">
+              <h3>숫자 합치기</h3>
+              <p>같은 숫자를 밀어서 합쳐 2048을 만드세요.</p>
+              <span class="tag">퍼즐</span>
+            </div>
+            <span class="play">플레이</span>
+          </a>
+        </li>
+
+        <li class="card c-blue" data-cat="puzzle">
+          <a href="games/minesweeper/index.html" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">💣</div>
+            <div class="info">
+              <h3>지뢰찾기</h3>
+              <p>숫자 힌트로 지뢰의 위치를 추리하세요.</p>
+              <span class="tag">퍼즐</span>
+            </div>
+            <span class="play">플레이</span>
+          </a>
+        </li>
+
+        <li class="card c-orange" data-cat="board">
+          <a href="games/tictactoe/index.html" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">⭕</div>
+            <div class="info">
+              <h3>틱택토</h3>
+              <p>가로, 세로, 대각선으로 세 개를 먼저 이어 보세요.</p>
+              <span class="tag">보드</span>
+            </div>
+            <span class="play">플레이</span>
+          </a>
+        </li>
+
+        <li class="card c-mint" data-cat="skill">
+          <a href="games/typing/index.html" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">⌨️</div>
+            <div class="info">
+              <h3>타자 연습</h3>
+              <p>떨어지는 단어를 빠르고 정확하게 입력하세요.</p>
+              <span class="tag">연습</span>
+            </div>
+            <span class="play">플레이</span>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- 소개 -->
+    <section class="about" id="about">
+      <h2>소개</h2>
+      <p>이 사이트의 게임은 모두 HTML 파일 하나로 돌아가요. 로그인이나 설치 없이 카드를 누르면 새 탭에서 바로 열립니다.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 게임 놀이터</p>
+  </footer>
+
+</body>
+</html>
