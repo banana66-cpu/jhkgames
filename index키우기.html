@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
- <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐣%3C/text%3E%3C/svg%3E">
-<title>키우기 게임</title>
+ <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐾%3C/text%3E%3C/svg%3E">
+<title>지훈펫</title>
 <style>
 :root{--bg:#eef6ff;--card:#fff;--tx:#1d2733;--sub:#6b7a8c;--bd:#d5e2f0;--ac:#3b82f6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121821;--card:#1c2530;--tx:#e8eef5;--sub:#93a3b5;--bd:#2c3a4a}}
@@ -49,7 +49,7 @@ button.a{padding:6px 0}button.a b{font-size:20px}
 .hint{font-size:10px;color:var(--sub);line-height:1.35;text-align:center}
 .side #bCure{padding:18px 2px;font-size:14px;font-weight:700;border:2px solid var(--ac)}.side #bCure b{font-size:34px}
 </style></head><body><div id="app">
-<div style="display:flex;align-items:center;gap:8px"><h1 id="title" style="flex:1">🐣 키우기 게임</h1><button class="a" id="reset" style="padding:6px 10px">🔄 초기화</button></div>
+<div style="display:flex;align-items:center;gap:8px"><h1 id="title" style="flex:1">🐾 지훈펫</h1><button class="a" id="reset" style="padding:6px 10px">🔄 초기화</button></div>
 <div class="card"><div class="bars" id="bars"></div></div>
 <div id="mid"><div class="side" id="sl"><button class="a" id="bCook"><b>🍳</b>조리 0/10</button><div class="row"><button class="a" id="bFill"><b>🪣</b><span>물통 물받기</span></button><div class="gauge"><i id="gFill"></i></div></div><div class="hint">물통 물받기는<br>3초 꾹 누르기</div></div><div class="card sc"><div id="stage"><img id="pet" alt="캐릭터"></div><p id="msg"></p></div><div class="side" id="sr"><button class="a" id="bCure"><b>💊</b>만능약</button><div class="hint">게임당 딱 1번!<br>게이지 전부 100, 💩 전부 치우고 건강 +50</div><button class="a" id="bTub"><b>🚿</b>욕조 물받기</button><div class="hint">누르면 물받기 시작!<br>시간이 9~11초일 때 다시 눌러 멈추면 성공, 다른 타이밍이면 처음부터</div></div></div>
 <div class="btns">
