@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>사진 테트리스</title>
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>지훈 테트리스</title>
  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧱%3C/text%3E%3C/svg%3E">
 <style>
 :root{--bg:#f3f1f8;--fg:#1d1b2e;--pn:#fff;--ac:#5b3fd9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -74,6 +74,6 @@ document.querySelectorAll("[data-k]").forEach(b=>{let iv;const k=b.dataset.k;
  b.addEventListener("pointerdown",e=>{e.preventDefault();act(k);if(k=="l"||k=="r"||k=="d")iv=setInterval(()=>act(k),110)});
  ["pointerup","pointerleave","pointercancel"].forEach(ev=>b.addEventListener(ev,()=>clearInterval(iv)))});
 addEventListener("keydown",e=>{const m={ArrowLeft:"l",ArrowRight:"r",ArrowDown:"d",ArrowUp:"u"," ":"h"}[e.key];if(m){e.preventDefault();act(m)}});
-reset();run=false;show("사진 테트리스<br><small>블록 10개를 놓을 때마다 빨라져요</small>","시작");
+reset();run=false;show("지훈 테트리스<br><small>블록 10개를 놓을 때마다 빨라져요</small>","시작");
 requestAnimationFrame(t=>{last=t;loop(t)});
 </script></body></html>
