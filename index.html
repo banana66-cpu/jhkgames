@@ -212,5 +212,30 @@
     <p>© jhkgames</p>
   </footer>
 
+  
+  <button id="toTop" aria-label="맨 위로">▲</button>
+
+<style>
+#toTop{
+  position:fixed; right:20px; bottom:20px; z-index:999;
+  width:48px; height:48px; border:0; border-radius:50%;
+  background:#ffd23f; color:#222; font-size:20px; font-weight:900;
+  cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,.35);
+  opacity:0; pointer-events:none; transition:opacity .25s;
+}
+#toTop.show{opacity:1; pointer-events:auto}
+#toTop:hover{filter:brightness(1.1)}
+</style>
+
+<script>
+const toTop = document.getElementById('toTop');
+window.addEventListener('scroll', () => {
+  toTop.classList.toggle('show', window.scrollY > 200);
+});
+toTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+  
 </body>
 </html>
