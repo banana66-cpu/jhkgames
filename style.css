@@ -121,11 +121,11 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 .filters input:focus-visible + label { outline: 3px solid var(--yellow); outline-offset: 3px; }
 
 /* 선택한 카테고리가 아닌 카드는 숨김 */
-.games:has(#f-action:checked) .card:not([data-cat~="casual"]),
-.games:has(#f-puzzle:checked) .card:not([data-cat~="action"]),
+.games:has(#f-casual:checked) .card:not([data-cat~="casual"]),
+.games:has(#f-action:checked) .card:not([data-cat~="action"]),
 .games:has(#f-puzzle:checked) .card:not([data-cat~="puzzle"]),
-.games:has(#f-board:checked)  .card:not([data-cat~="tactics"]),
-.games:has(#f-skill:checked)  .card:not([data-cat~="simulator"]) {
+.games:has(#f-tactics:checked)  .card:not([data-cat~="tactics"]),
+.games:has(#f-simulator:checked)  .card:not([data-cat~="simulator"]) {
   display: none;
 }
 
