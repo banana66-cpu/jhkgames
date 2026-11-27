@@ -121,10 +121,11 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 .filters input:focus-visible + label { outline: 3px solid var(--yellow); outline-offset: 3px; }
 
 /* 선택한 카테고리가 아닌 카드는 숨김 */
-.games:has(#f-action:checked) .card:not([data-cat~="action"]),
+.games:has(#f-action:checked) .card:not([data-cat~="casual"]),
+.games:has(#f-puzzle:checked) .card:not([data-cat~="action"]),
 .games:has(#f-puzzle:checked) .card:not([data-cat~="puzzle"]),
-.games:has(#f-board:checked)  .card:not([data-cat~="board"]),
-.games:has(#f-skill:checked)  .card:not([data-cat~="skill"]) {
+.games:has(#f-board:checked)  .card:not([data-cat~="tactics"]),
+.games:has(#f-skill:checked)  .card:not([data-cat~="simulator"]) {
   display: none;
 }
 
@@ -198,6 +199,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 .c-yellow { --card-color: var(--yellow); }
 .c-mint   { --card-color: var(--mint); }
 .c-orange { --card-color: var(--orange); }
+.c-green { --card-color: var(--green); }
 
 /* ===== 소개 ===== */
 .about p { max-width: 36rem; margin: 0; color: #dfe3ff; }
