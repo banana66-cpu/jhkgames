@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>얼굴 볼링 🎳</title><style>
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>지훈 볼링</title><style>
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#0d0f1a;--card:#1b1e33;--tx:#f2f0ff;--ac:#ffb02e;--mu:#9a98b8;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;display:flex;justify-content:center}
 #app{width:100%;max-width:480px;padding:8px}#top{display:flex;justify-content:space-between;align-items:center;padding:4px 6px;font-weight:700}#info{font-size:13px;color:var(--mu)}
@@ -27,13 +27,13 @@ body{align-items:center;min-height:100vh}
 #keys b{color:var(--tx)}#keys kbd{background:#2b2f55;border:1px solid #4a4f7c;border-bottom-width:3px;border-radius:6px;padding:1px 8px;color:var(--tx);font:inherit;font-size:13px;font-weight:700}
 }
 </style></head><body><div id="app">
-<div id="top"><span>🎳 얼굴 볼링</span><span id="info"></span></div>
+<div id="top"><span>🎳 지훈 볼링</span><span id="info"></span></div>
 <div id="sbs"></div>
 <div id="keys"><b>⌨️ 조작법</b><br><kbd>Space</kbd> / <kbd>Enter</kbd> / 마우스 클릭 → ① 위치 고정 ② 방향 고정 + 투구<br>메뉴·결과 화면에서 <kbd>Enter</kbd> → 시작 / 다시 하기</div>
 <div id="wrap"><canvas id="c" width="540" height="860"></canvas><div id="hint"></div><div id="toast"></div>
-<div class="ov" id="menu"><h2>🎳 얼굴 볼링</h2>
+<div class="ov" id="menu"><h2>🎳 지훈 볼링</h2>
 <div><small>난이도</small><div class="row" id="dif"></div></div>
-<div><small>모드</small><div class="row" id="mode"></div></div><div><small>1P 공 얼굴</small><div class="row" id="faces"></div></div><div id="f2w"><small>2P / AI 공 얼굴</small><div class="row" id="faces2"></div></div>
+<div><small>모드</small><div class="row" id="mode"></div></div><div><small>1P 공 스킨</small><div class="row" id="faces"></div></div><div id="f2w"><small>2P / AI 공 스킨</small><div class="row" id="faces2"></div></div>
 <small id="how">① 탭해서 위치 고정 → ② 탭해서 방향 고정 후 투구<br>정식 10프레임 · 스트라이크/스페어 보너스 · 2인은 프레임마다 번갈아 진행</small>
 <button class="go" id="start">시작!</button></div>
 <div class="ov h" id="end"><h2 id="eh"></h2><div id="es" style="font-size:28px;font-weight:900;color:var(--ac)"></div><small id="ed"></small><button class="go" id="again">다시 하기</button></div></div>
