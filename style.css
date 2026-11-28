@@ -202,6 +202,9 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 .c-yellow { --card-color: var(--yellow); }
 .c-mint   { --card-color: var(--mint); }
 .c-orange { --card-color: var(--orange); }
+.c-red    { --card-color: var(--red); }
+.c-purple { --card-color: var(--purple); }
+.c-green  { --card-color: var(--green); }
 
 /* ===== 소개 ===== */
 .about p { max-width: 36rem; margin: 0; color: #dfe3ff; }
